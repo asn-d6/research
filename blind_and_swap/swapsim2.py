@@ -85,15 +85,15 @@ def run(width, rounds, swaps_per_round, offline_percent):
                 array[R] = new_prob
 
         # Add a new element to the shuffling list
-        extraction_index = extract_positions[r]
+        # extraction_index = extract_positions[r]
         # Save the probabilities of the proposer to `output`
-        output.append(array[extraction_index])
-        array[extraction_index] = {width+r: 1}
+        # output.append(array[extraction_index])
+        # array[extraction_index] = {width+r: 1}
 
-        log("New index: {}, Index: {}, offset: {}".format(width+r, extraction_index, extract_offsets[r]), 2)
-        log(lambda: [simplify_dict(x) for x in array], 3)
+        # log("New index: {}, Index: {}, offset: {}".format(width+r, extraction_index, extract_offsets[r]), 2)
+        # log(lambda: [simplify_dict(x) for x in array], 3)
 
-    return output
+    return array
 
 def test(width, rounds, swaps_per_round, offline_percent):
     thresholds = []
