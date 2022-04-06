@@ -4,9 +4,9 @@ LOG_LEVEL = [None]
 FUNCTION = (lambda: 0).__class__
 
 DEFAULTS = {
-    'width': 256,
-    'rounds': 512,
-    'swaps_per_round': 15,
+    'width': 2048,
+    'rounds': 4096,
+    'swaps_per_round': 31,
     'log_level': 1,
     'offline_percent': 0 # offline_percent of the validators will be offline and not shuffle
 }
